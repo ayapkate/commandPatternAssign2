@@ -1,6 +1,7 @@
 # commandPatternAssign2
 Lab assignment 2 Command Pattern
 
+***
 Smart Home Automation
 
 Imagine you're building a smart home automation system where various devices (lights, thermostat, music player, etc.) can be controlled remotely using a central hub or app. Each device has different functionalities, but you want to create a unified and flexible control mechanism.
