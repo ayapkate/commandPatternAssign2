@@ -1,4 +1,4 @@
-# commandPatternAssign2
+# Command Design Pattern Assignment 2
 Lab assignment 2 Command Pattern
 
 
