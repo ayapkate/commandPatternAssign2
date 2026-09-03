@@ -1,3 +1,5 @@
+package commandPattern;
+
 public class MusicPlayer implements CentralHub {
 
     private int volume = 0;
