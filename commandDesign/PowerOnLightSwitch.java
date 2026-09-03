@@ -1,22 +1,20 @@
 package commandDesign;
 
-public class PowerOffThermostat implements Command{
+public class PowerOnLightSwitch implements Command{
 
-    //Concrete Command #7
+    //Concrete Command #8
 
-    private Thermostat thermostat;
+    private LightSwitch lights;
 
-    public PowerOffThermostat(Thermostat thermostat) {
-        this.thermostat = thermostat;
+    public PowerOnLightSwitch(LightSwitch lights) {
+        this.lights = lights;
     }
 
     public void execute() {
-        thermostat.off();
+        lights.on();
     }
-
 
     public void undo() { //opposite dapat d2
-        thermostat.on();
+        lights.off();
     }
     
-}
