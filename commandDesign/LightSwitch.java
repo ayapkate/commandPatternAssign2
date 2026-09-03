@@ -2,7 +2,7 @@ package commandDesign;
 
 public class LightSwitch {
 
-    //ito ang receiver
+        //This is the receiver
 
     private int brightness = 25;
 
