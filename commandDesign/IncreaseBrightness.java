@@ -9,10 +9,12 @@ public class IncreaseBrightness implements Command{
         this.lights = lights;
     }
 
+    @Override 
     public void execute() {
         lights.increase();
     }
 
+    @Override
     public void undo() {
         lights.decrease();
     }

@@ -8,10 +8,12 @@ public class VolUpMusic implements Command{
         this.music = music;
     }
 
+    @Override 
     public void execute() {
         music.increase();
     }
 
+    @Override 
     public void undo() { //opposite dapat d2
         music.decrease();
     }

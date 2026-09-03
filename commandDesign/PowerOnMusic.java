@@ -10,10 +10,12 @@ public class PowerOnMusic implements Command{
         this.music = music;
     }
 
+    @Override
     public void execute() {
         music.on();
     }
-    
+
+    @Override
     public void undo() { //opposite dapat d2
         music.off();
     }

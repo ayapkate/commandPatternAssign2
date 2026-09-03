@@ -8,11 +8,13 @@ public class DecreaseTemp implements Command{
     public DecreaseTemp(Thermostat thermostat) {
         this.thermostat = thermostat;
     }
-
+    
+    @Override 
     public void execute() {
         thermostat.decrease();
     }
 
+    @Override
     public void undo() {
         thermostat.increase();
     }

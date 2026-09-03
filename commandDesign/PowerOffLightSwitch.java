@@ -10,10 +10,12 @@ public class PowerOffLightSwitch implements Command{
         this.lights = lights;
     }
 
+    @Override 
     public void execute() {
         lights.off();
     }
 
+    @Override
     public void undo() { //opposite dapat d2
         lights.on();
     }

@@ -10,11 +10,12 @@ public class PowerOffThermostat implements Command{
         this.thermostat = thermostat;
     }
 
+    @Override 
     public void execute() {
         thermostat.off();
     }
 
-
+    @Override
     public void undo() { //opposite dapat d2
         thermostat.on();
     }

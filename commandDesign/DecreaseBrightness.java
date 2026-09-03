@@ -9,10 +9,15 @@ public class DecreaseBrightness implements Command{
         this.lights = lights;
     }
 
+    public DecreaseBrightness() {
+    }
+
+    @Override 
     public void execute() {
          lights.decrease();
     }
 
+    @Override
     public void undo() {
         lights.increase();
     }

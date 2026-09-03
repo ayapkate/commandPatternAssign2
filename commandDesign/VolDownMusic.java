@@ -9,10 +9,12 @@ public class VolDownMusic implements Command{
         this.music = music;
     }
 
+    @Override 
     public void execute() {
         music.decrease();
     }
 
+    @Override
     public void undo() { //opposite dapat d2
         music.increase();
     }
