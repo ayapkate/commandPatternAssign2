@@ -14,9 +14,4 @@ public class VolDownMusic implements Command{
         music.decrease();
     }
 
-    @Override
-    public void undo() { //opposite dapat d2
-        music.increase();
-    }
-
 }

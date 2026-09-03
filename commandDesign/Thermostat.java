@@ -2,7 +2,7 @@ package commandDesign;
 
 public class Thermostat {
 
-    //ito ang receiver
+    //Receiver 
 
     private int temperature = 20;
 

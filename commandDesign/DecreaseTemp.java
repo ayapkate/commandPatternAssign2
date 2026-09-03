@@ -1,7 +1,8 @@
 package commandDesign;
 
 public class DecreaseTemp implements Command{
-    //Concrete Command #2
+   
+        //Concrete Command #2
 
        private Thermostat thermostat;
        
@@ -13,11 +14,5 @@ public class DecreaseTemp implements Command{
     public void execute() {
         thermostat.decrease();
     }
-
-    @Override
-    public void undo() {
-        thermostat.increase();
-    }
-
     
 }

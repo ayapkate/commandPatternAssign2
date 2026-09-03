@@ -1,7 +1,8 @@
 package commandDesign;
 
-public class DecreaseBrightness implements Command{
-    //Concrete Command #1
+public class DecreaseBrightness implements Command { 
+
+    //Concrete Command
 
     private LightSwitch lights;
 
@@ -9,17 +10,10 @@ public class DecreaseBrightness implements Command{
         this.lights = lights;
     }
 
-    public DecreaseBrightness() {
-    }
 
     @Override 
     public void execute() {
          lights.decrease();
     }
 
-    @Override
-    public void undo() {
-        lights.increase();
-    }
-    
 }

@@ -15,9 +15,5 @@ public class PowerOnMusic implements Command{
         music.on();
     }
 
-    @Override
-    public void undo() { //opposite dapat d2
-        music.off();
-    }
    
 }

@@ -2,7 +2,7 @@ package commandDesign;
 
 public class PowerOffLightSwitch implements Command{
 
-    //Concrete Command #5
+    //Concrete Command 5
 
     private LightSwitch lights;
 
@@ -15,9 +15,5 @@ public class PowerOffLightSwitch implements Command{
         lights.off();
     }
 
-    @Override
-    public void undo() { //opposite dapat d2
-        lights.on();
-    }
 
 }

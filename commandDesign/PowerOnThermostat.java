@@ -16,9 +16,4 @@ public class PowerOnThermostat implements Command{
     }
     
     
-    @Override
-    public void undo() { //opposite dapat d2
-        thermostat.off();
-    }
-    
 }

@@ -41,7 +41,7 @@ public class SmartHomeAutomation {
         rc.submit(powerOff);
 
         System.out.println("____________________________________________________");
-        System.out.println("                      Brightness");
+        System.out.println("                     Brightness");
         System.out.println("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
         Command brightlvl = new IncreaseBrightness(livingRoom);
         rc.submit(brightlvl);
@@ -70,6 +70,7 @@ public class SmartHomeAutomation {
         Command decreaseTemp = new DecreaseTemp(thermostat);
         rc.submit(decreaseTemp);
         rc.submit(decreaseTemp);
+       
         
 
     }

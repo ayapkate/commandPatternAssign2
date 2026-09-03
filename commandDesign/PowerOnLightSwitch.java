@@ -15,8 +15,5 @@ public class PowerOnLightSwitch implements Command{
         lights.on();
     }
 
-    @Override
-    public void undo() { //opposite dapat d2
-        lights.off();
-    }
+  
 }

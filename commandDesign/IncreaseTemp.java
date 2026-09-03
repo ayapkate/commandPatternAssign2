@@ -13,9 +13,6 @@ public class IncreaseTemp implements Command{
         thermostat.decrease();
     }
 
-    @Override 
-    public void undo() {
-        thermostat.increase();
-    }
+
    
 }
