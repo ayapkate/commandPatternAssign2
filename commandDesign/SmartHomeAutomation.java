@@ -15,6 +15,10 @@ public class SmartHomeAutomation {
         System.out.println("=====================|Spotify|=======================");
         Command powerOn = new PowerOnMusic(spotify);
         rc.submit(powerOn);
+        System.out.println("-----------------------------------------------------");
+        Command powerOff = new PowerOffMusic(spotify);
+        rc.submit(powerOff);
+
      
         System.out.println("____________________________________________________");
         System.out.println("                     Volume");
@@ -32,7 +36,10 @@ public class SmartHomeAutomation {
         System.out.println("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
         powerOn = new PowerOnLightSwitch(livingRoom);
         rc.submit(powerOn);
-     
+        System.out.println("-----------------------------------------------------");
+        powerOff = new PowerOffLightSwitch(livingRoom);
+        rc.submit(powerOff);
+
         System.out.println("____________________________________________________");
         System.out.println("                      Brightness");
         System.out.println("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
@@ -49,11 +56,20 @@ public class SmartHomeAutomation {
         System.out.println("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
         powerOn = new PowerOnThermostat(thermostat);
         rc.submit(powerOn);
- 
+        System.out.println("-----------------------------------------------------");
+        System.out.println("-----------------------------------------------------");
+        powerOff = new PowerOffThermostat(thermostat);
+        rc.submit(powerOff);
 
         System.out.println("____________________________________________________");
         System.out.println("                Thermostat Temperature");
         System.out.println("¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯");
+        Command increaseTemp = new IncreaseTemp(thermostat);
+        rc.submit(increaseTemp);
+        System.out.println("-----------------------------------------------------");
+        Command decreaseTemp = new DecreaseTemp(thermostat);
+        rc.submit(decreaseTemp);
+        rc.submit(decreaseTemp);
         
 
     }
